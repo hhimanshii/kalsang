@@ -1,0 +1,121 @@
+@import "tailwindcss";
+@font-face {
+    font-family: 'Inter';
+    src: url('./assets/fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "PermanentMarker";
+    src: url("./assets/fonts/PermanentMarker.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    src: url('./assets/fonts/Inter-Italic-VariableFont_opsz,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('./assets/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('./assets/fonts/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'NotoSerifOriya';
+    src: url('./assets/fonts/NotoSerifOriya-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Zalando';
+    src: url('./assets/fonts/ZalandoSansSemiExpanded-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Hahmlet';
+    src: url('./assets/fonts/Hahmlet-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Allura';
+    src: url('./assets/fonts/Allura-Regular.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  /* ✅ Make Inter the default font for the whole site */
+  html, body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .smoke {
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    animation: smokeFloat 7s ease-in-out infinite;
+  }
+  
+  /* Core line */
+  .smoke.core {
+    stroke: rgba(230, 230, 230, 0.55);
+    stroke-width: 5;
+  }
+  
+  /* Wide middle illusion */
+  .smoke.soft {
+    stroke: rgba(230, 230, 230, 0.3);
+    stroke-width: 14;
+    filter: blur(6px);
+  }
+  
+  /* Size variations */
+  .smoke.medium.core { stroke-width: 4; }
+  .smoke.medium.soft { stroke-width: 11; }
+  
+  .smoke.small.core { stroke-width: 3; }
+  .smoke.small.soft { stroke-width: 9; }
+  
+  /* Movement */
+  @keyframes smokeFloat {
+    0% {
+      opacity: 0;
+      transform: translateY(0) translateX(0);
+    }
+  
+    25% {
+      opacity: 0.6;
+    }
+  
+    60% {
+      transform: translateY(-80px) translateX(-12px);
+      opacity: 0.45;
+    }
+  
+    100% {
+      transform: translateY(-160px) translateX(12px);
+      opacity: 0;
+    }
+  }
+  
