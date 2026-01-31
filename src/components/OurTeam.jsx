@@ -14,7 +14,7 @@ const OurTeam = () => {
     <section className="w-full bg-gradient-to-b 
 from-[#3d0806] 
 via-[#9b1915]
-to-[#f9f9f9]
+to-[#111111]
                         text-white py-16 sm:py-20 lg:py-28 px-4 sm:px-8 lg:px-20">
       <div className="max-w-7xl mx-auto space-y-24">
 

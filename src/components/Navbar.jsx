@@ -16,9 +16,9 @@ export default function Navbar() {
       {/* Desktop Links */}
       <div className="hidden md:flex flex-row items-center justify-center text-gray-800 gap-x-20">
         <Link to="/" className="text-yellow-400 transition-colors">Our Story</Link>
-        <Link to="/" className="text-yellow-400 transition-colors">Menu</Link>
-        <Link to="/" className="text-yellow-400 transition-colors">Outlets</Link>
-        <Link to="/" className="text-yellow-400 transition-colors">Contact Us</Link>
+        <Link to="/menu" className="text-yellow-400 transition-colors">Menu</Link>
+        <Link to="/outlets" className="text-yellow-400 transition-colors">Outlets</Link>
+        <Link to="/contact" className="text-yellow-400 transition-colors">Contact Us</Link>
       </div>
 
       {/* Mobile Menu Button */}
