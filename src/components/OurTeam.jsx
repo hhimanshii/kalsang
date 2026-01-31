@@ -1,7 +1,7 @@
 import React from "react";
 
 const ownerImage =
-  "https://images.unsplash.com/photo-1572715376701-98568319fd0b?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hlZnxlbnwwfHwwfHx8MA%3D%3D";
+  "https://static01.nyt.com/images/2015/06/03/dining/20150603HUNGRY-slide-6LCR/20150603HUNGRY-slide-6LCR-superJumbo.jpg";
 
 const teamImages = [
   "https://images.unsplash.com/photo-1579705625203-9e335af5abc7?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNoZWYlMjB0ZWFtfGVufDB8fDB8fHww",
@@ -22,7 +22,7 @@ to-[#111111]
         <div className="flex flex-col lg:flex-row gap-12 items-center">
 
           {/* IMAGE */}
-          <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
+          <div className="w-full lg:w-1/2 flex justify-center ">
             <div className="relative w-[240px] sm:w-[300px] md:w-[360px]
                             h-[320px] sm:h-[380px] md:h-[440px]
                             rounded-t-full overflow-hidden
