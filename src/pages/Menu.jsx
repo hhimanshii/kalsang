@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import menuData from "../data/menuData";
 
 const Menu = () => {
   return (
@@ -67,52 +69,20 @@ const Menu = () => {
             </h3>
         </div>
 
+
+
         {/* MENU GRID */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16">
-
-          {/* COLUMN 1 */}
-          <div className="space-y-12">
-            <MenuItem
-              title="Thukpa"
-              desc="Hearty Tibetan noodle soup with fresh vegetables and herbs."
-              price="₹280"
-              image="https://cookwithrenu.com/wp-content/uploads/2019/09/Thukpa_3-500x375.jpg"
-            />
-            <MenuItem
-              title="Chilli Chicken"
-              desc="Indo-Chinese classic tossed with peppers and garlic."
-              price="₹320"
-              image="https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?q=80&w=300&auto=format&fit=crop"
-            />
-            <MenuItem
-              title="Shapta"
-              desc="Thinly sliced meat stir-fried with ginger, garlic and chili."
-              price="₹350"
-              image="https://images.slurrp.com/webstories/wp-content/uploads/2022/12/277960746_608322710853122_5726825640643154040_n.jpg"
-            />
-          </div>
-
-          {/* COLUMN 2 */}
-          <div className="space-y-12">
-            <MenuItem
-              title="Pad Thai"
-              desc="Rice noodles stir-fried with tamarind, peanuts, and herbs."
-              price="₹340"
-              image="https://images.unsplash.com/photo-1559314809-0d155014e29e?q=80&w=300&auto=format&fit=crop"
-            />
-            <MenuItem
-              title="Thai Green Curry"
-              desc="Coconut-based curry infused with Thai basil and spices."
-              price="₹360"
-              image="https://www.kitchensanctuary.com/wp-content/uploads/2019/06/Thai-Green-Chicken-Curry-Tall1.jpg"
-            />
-             <MenuItem
-              title="Honey Chilli Potatoes"
-              desc="Crispy potatoes glazed with sweet and spicy sauce."
-              price="₹260"
-              image="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?q=80&w=300&auto=format&fit=crop"
-            />
-          </div>
+          {menuData.map((item) => (
+             <Link key={item.id} to={`/menu/${item.id}`} className="block">
+                <MenuItem
+                    title={item.title}
+                    desc={item.desc}
+                    price={item.price}
+                    image={item.image}
+                />
+             </Link>
+          ))}
         </div>
 
         {/* FOOTER NOTE */}

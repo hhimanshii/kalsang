@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Menu from "./pages/Menu";
 import Outlets from "./pages/Outlets";
+import MenuItemDetail from "./pages/MenuItemDetail";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/menu" element={<Menu />} />
+          <Route path="/menu/:id" element={<MenuItemDetail />} />
           <Route path="/outlets" element={<Outlets />} />
         </Routes>
       </div>
