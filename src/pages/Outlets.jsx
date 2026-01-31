@@ -67,7 +67,7 @@ const Outlets = () => {
 
         {/* LEFT TEXT */}
         <div className="relative z-20 w-full lg:w-[45%] lg:pr-10 text-center lg:text-left">
-             <h1 className="font-cormorant font-bold text-6xl sm:text-7xl lg:text-8xl leading-none tracking-tight mb-2 text-white">
+             <h1 className="font-cormorant font-bold text-6xl leading-none tracking-tight mb-2 text-white">
             Find Us
           </h1>
           <p className="font-allura text-[#d62828] text-3xl sm:text-4xl lg:text-5xl -mt-2 mb-8 ml-2 italic" style={{ fontFamily: "Cormorant" }}>

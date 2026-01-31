@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import OurStory from "./OurStory";
 import Menu from "./Menu";
+import Outlets from './Outlets'
 
 const HomePage = () => {
   return (
@@ -54,6 +55,7 @@ const HomePage = () => {
 
       <OurStory />
       <Menu />
+      <Outlets/>
     </>
   );
 };
