@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import OurStory from "./OurStory";
 import Menu from "./Menu";
 import Outlets from './Outlets'
+import Contact from "./Contact";
 
 const HomePage = () => {
   return (
@@ -56,6 +57,7 @@ const HomePage = () => {
       <OurStory />
       <Menu />
       <Outlets/>
+      <Contact/>
     </>
   );
 };
