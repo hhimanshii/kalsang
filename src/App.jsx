@@ -11,6 +11,7 @@ export default function App() {
   return (
     <Router>
       <div style={{backgroundColor:"#FFFFFF"}}>
+        <Navbar/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

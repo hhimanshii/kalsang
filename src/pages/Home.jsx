@@ -7,18 +7,16 @@ const HomePage = () => {
   return (
     <>
       <section className="w-full min-h-screen bg-[#111111] text-white px-4 sm:px-8 lg:px-20 relative overflow-hidden">
-        <Navbar />
-
         {/* HERO SECTION */}
         <div className="flex items-center justify-center min-h-[calc(100vh-80px)]">
             <div className="max-w-7xl mx-auto w-full flex flex-col lg:flex-row items-center gap-16 relative z-10">
                 
                 {/* LEFT CONTENT */}
                 <div className="w-full lg:w-1/2 text-center lg:text-left z-20">
-                     <p className="font-cormorant italic text-[#d62828] text-3xl sm:text-4xl mb-4 tracking-wide" style={{ fontFamily: "Cormorant" }}>
+                     <p className="font-cormorant text-[#d62828] text-3xl sm:text-4xl mb-4 tracking-wide" >
                         Himalayan Flavours
                     </p>
-                    <h1 className="font-cormorant font-bold italic text-6xl sm:text-7xl lg:text-9xl leading-none tracking-tighter mb-6">
+                    <h1 className="font-cormorant font-bold italic text-6xl sm:text-7xl lg:text-9xl leading-none tracking-tighter mb-6" style={{ fontFamily: "Cormorant" }}>
                         Kalsang
                     </h1>
                      <p className="text-gray-400 text-sm sm:text-base md:text-lg leading-relaxed max-w-md mx-auto lg:mx-0 border-l border-[#d62828] pl-6">
@@ -43,7 +41,7 @@ const HomePage = () => {
                     {/* HERO IMAGE */}
                     <div className="relative z-10 w-[300px] sm:w-[380px] lg:w-[480px] h-[400px] lg:h-[550px] overflow-hidden shadow-2xl border-4 border-[#111]">
                         <img 
-                            src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=80&w=1000&auto=format&fit=crop" 
+                            src="https://kalsang-eight.vercel.app/assets/ourstory-iek32EWF.jpg" 
                             alt="Asian Cuisine" 
                             className="w-full h-full object-cover"
                         />

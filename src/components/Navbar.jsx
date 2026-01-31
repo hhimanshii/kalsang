@@ -7,7 +7,7 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="flex items-center justify-between py-4 px-[5%] bg-transparent relative">
+    <nav className="flex items-center justify-between py-4 px-[5%] relative bg-[#111111]">
       {/* Logo */}
       <div className="flex items-center">
         <img src={logo} alt="Logo" className="h-20 w-20" />
@@ -15,10 +15,10 @@ export default function Navbar() {
 
       {/* Desktop Links */}
       <div className="hidden md:flex flex-row items-center justify-center text-gray-800 gap-x-20">
-        <Link to="/" className="text-yellow-400 transition-colors">Our Story</Link>
-        <Link to="/menu" className="text-yellow-400 transition-colors">Menu</Link>
-        <Link to="/outlets" className="text-yellow-400 transition-colors">Outlets</Link>
-        <Link to="/contact" className="text-yellow-400 transition-colors">Contact Us</Link>
+        <Link to="/" className="text-yellow-500 transition-colors">Our Story</Link>
+        <Link to="/menu" className="text-yellow-500 transition-colors">Menu</Link>
+        <Link to="/outlets" className="text-yellow-500 transition-colors">Outlets</Link>
+        <Link to="/contact" className="text-yellow-500 transition-colors">Contact Us</Link>
       </div>
 
       {/* Mobile Menu Button */}

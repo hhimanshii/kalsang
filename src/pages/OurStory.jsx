@@ -5,7 +5,7 @@ const OurStory = () => {
   return (
     <>
     <section className="w-full bg-gradient-to-b 
-from-[#3d0806] 
+from-[#111111] 
 to-[#3d0806] text-white py-16 sm:py-20 lg:py-28 px-4 sm:px-8 lg:px-20">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 items-center">
 
