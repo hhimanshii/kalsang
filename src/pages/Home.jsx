@@ -4,8 +4,10 @@ import OurStory from "./OurStory";
 import Menu from "./Menu";
 import Outlets from './Outlets'
 import Contact from "./Contact";
+import { useNavigate } from "react-router-dom";
 
 const HomePage = () => {
+    const navigate = useNavigate();
   return (
     <>
       <section className="w-full min-h-screen bg-[#111111] text-white px-4 sm:px-8 lg:px-20 relative overflow-hidden">
@@ -25,7 +27,7 @@ const HomePage = () => {
                         An intimate dining experience inspired by Tibetan, Chinese,
                         and Thai traditions — crafted with warmth, depth, and soul.
                     </p>
-                    <button className="mt-10 px-8 py-3 bg-[#9b1915] text-white text-xs tracking-[0.2em] uppercase hover:bg-white hover:text-[#9b1915] transition-all duration-300">
+                    <button className="mt-10 px-8 py-3 bg-[#9b1915] text-white text-xs tracking-[0.2em] uppercase hover:bg-white hover:text-[#9b1915] transition-all duration-300" onClick={() => navigate("/menu")}>
                         View Menus
                     </button>
                 </div>
